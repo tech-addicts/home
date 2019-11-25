@@ -1,0 +1,266 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #001A35;
+}
+
+.menu {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    right: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 40px;
+}
+
+.sidebar a:hover {
+    color: #e9bd43;
+}
+
+.sidebar h1 {
+    color: #e9bd43;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-left: 32px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.7s;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    display: block;
+    font-size: 25px;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+    background-color: #001A35;
+    color: #e9bd43;
+    padding: 20px 15px;
+    border: none;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:600px) {
+    .title {
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+        color: #e9bd43;
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        background-color: #001A35;
+        overflow: auto;
+        white-space: nowrap;
+        height: 37vh;
+
+    }
+
+    .container div {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .head {
+        font-size: 25px;
+        color: #e9bd43;
+        margin-left: 20px;
+        margin-top: 20px;
+        font-weight: 500;
+
+    }
+
+    .slide {
+        width: 20vw;
+        height: 32vh;
+        margin-top: 2.5vh;
+        margin-left: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .slide:hover {
+        cursor: pointer;
+    }
+
+    .one {
+        background-color: #00B8FF;
+        border: #00B8FF 5px solid;
+        border-radius: 5px;
+    }
+
+    .two {
+        background-color: #7C5CFF;
+        border: #7C5CFF 5px solid;
+        border-radius: 5px;
+    }
+
+    .three {
+        background-color: #FF61CF;
+        border: #FF61CF 5px solid;
+        border-radius: 5px;
+    }
+
+    .ima {
+        width: 100px;
+        border-radius: 50%;
+        margin: 0px 7.5vw;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        text-align: center;
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+
+    .branch {
+        text-align: center;
+        margin-top: 10px;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .title {
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+        color: #e9bd43;
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        background-color: #001A35;
+        overflow: auto;
+        white-space: nowrap;
+        height: 37vh;
+
+    }
+
+    .container div {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .head {
+        font-size: 25px;
+        color: #e9bd43;
+        margin-left: 20px;
+        margin-top: 20px;
+        font-weight: 500;
+
+    }
+
+    .slide {
+        width: 50vw;
+        height: 32vh;
+        margin-top: 2.5vh;
+        margin-left: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .slide:hover {
+        cursor: pointer;
+    }
+
+    .one {
+        background-color: #00B8FF;
+        border: #00B8FF 5px solid;
+        border-radius: 5px;
+    }
+
+    .two {
+        background-color: #7C5CFF;
+        border: #7C5CFF 5px solid;
+        border-radius: 5px;
+    }
+
+    .three {
+        background-color: #FF61CF;
+        border: #FF61CF 5px solid;
+        border-radius: 5px;
+    }
+
+    .ima {
+        width: 100px;
+        border-radius: 50%;
+        margin: 0px 55px;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        text-align: center;
+        margin-top: 10px;
+        opacity: 0.8;
+    }
+
+    .branch {
+        text-align: center;
+        margin-top: 10px;
+        opacity: 0.7;
+    }
+}
